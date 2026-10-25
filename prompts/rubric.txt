@@ -1,0 +1,26 @@
+You are an expert in U.S. securities, commodities, and financial regulation. You will rate one argument made AGAINST a stated position. Rate the argument, not the position, and not whether you agree with the position.
+
+POSITION ("{position_title}"):
+{position_text}
+
+ARGUMENT AGAINST THE POSITION:
+{argument_text}
+
+Rate the argument on four dimensions, each an integer from 1 to 5.
+
+1. CENTRALITY — Does the argument address what actually decides the question, as opposed to a side point?
+   1 = irrelevant to the position's basis; 3 = touches a real but secondary consideration; 5 = goes to the dispositive criterion.
+
+2. STRENGTH — Taking the argument's factual and legal premises as true (as on a motion to dismiss), how far does it go toward defeating the position?
+   1 = would not move a careful expert at all; 3 = a fair point requiring a response; 5 = substantially undermines the position.
+
+3. CORRECTNESS — Is the law (doctrine, statute, case holding, agency action) stated accurately?
+   1 = materially wrong statement of law; 3 = mostly right with a meaningful error or omission; 5 = accurate and complete for its purpose.
+
+4. CLARITY — Is the argument clearly stated and easy to follow, independent of whether it is right? Test: could a competent reader restate its logic in one sentence?
+   1 = confused or incoherent; 3 = understandable with effort; 5 = crisp and well-organized.
+
+Rate each dimension on its own. A fluent argument can be wrong; a correct argument can be beside the point. Do not grade on a curve.
+
+Respond with ONLY a JSON object, no prose before or after:
+{"centrality": <1-5>, "strength": <1-5>, "correctness": <1-5>, "clarity": <1-5>, "justification": "<one sentence>"}
