@@ -1,3 +1,4 @@
 .env
 __pycache__/
 results/raw/
+LEV_INSTRUCTIONS.md
